@@ -1,0 +1,15 @@
+<h1>Song Form</h2>
+
+<html>
+  <body>
+    <%= form_for @song do |s| %>
+      Released yet?: <%= s.check_box :released %><br>
+      Title: <%= s.text_field :title %><br>
+      Artist: <%= s.text_field :artist_name %><br>
+      Genre: <%= s.text_field :genre %><br>
+      Year Released: <%= s.text_field :release_year %><br><br>
+
+      Submit: <%= s.submit %>
+    <% end %>
+  </body>
+</html>
